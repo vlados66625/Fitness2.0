@@ -1,18 +1,63 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
-
+  display: inline;
+  padding: 20px;
+  text-align: center;
   color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
+  font-family: $ff-roboto-condensed;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
   cursor: pointer;
+  border: 4px solid $color-default-white;
+  background-color: transparent;
+  user-select: none;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  &--decorative {
+    background: linear-gradient(151deg, $color-torch-red 0%, #003eb7 100%);
+    border: none;
   }
+
+  &--text-sapphire {
+    color: $color-sapphire;
+  }
+
+  &--header-bottom {
+    padding: 20px 53px;
+
+    @include vp-1199 {
+      padding: 20px;
+      width: 100%;
+    }
+
+    @include vp-767 {
+      padding: 21px;
+    }
+  }
+
+  &--abonnement {
+    padding: 26px;
+  }
+
+  &--super-games {
+    padding: 27px;
+  }
+
+  // &--border-sapphire {
+  //   border: 2px solid #102654;
+  // }
+
+  // &--border-resolution-blue {
+  //   border: 2px solid #1c3374;
+  // }
+
+  // &--border-link-water {
+  //   border: 1px solid rgba(16, 38, 84, 0.2);
+  // }
 
   &:disabled {
     opacity: 0.5;
