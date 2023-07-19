@@ -8,10 +8,18 @@
 }
 
 @font-face {
+  font-family: "Rouble";
+  src: url("/fonts/rouble/rouble.woff2") format("woff2"),
+    url("/fonts/rouble/rouble.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Roboto Condensed";
   src: local("Roboto Condensed Light"), local("RobotoCondensed-Light"),
-    url("/fonts/roboto-condensed/roboto-condensed/robotocondensed.woff2")
-      format("woff2"),
+    url("/fonts/roboto-condensed/robotocondensedlight.woff2") format("woff2"),
     url("/fonts/roboto-condensed/robotocondensedlight.woff") format("woff");
   font-weight: 300;
   font-style: normal;

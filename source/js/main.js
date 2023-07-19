@@ -1,10 +1,24 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {Form} from './modules/form-validate/form';
-import {addEvtVideo} from './modules/play-button';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { Form } from './modules/form-validate/form';
+import { addEvtVideo } from './modules/play-button';
+import { calculateVideoSize } from './modules/size-video';
+import { initTabs, tabs } from './vendor/tabs/init-tabs';
 // ---------------------------------
+
+const control = document.querySelector('[data-tabs="control"]');
 
 window.addEventListener('DOMContentLoaded', () => {
   addEvtVideo();
+  if (control) {
+    initTabs();
+    tabs.openTab(control);
+  }
+
+  calculateVideoSize();
+  window.addEventListener('resize', function () {
+    calculateVideoSize();
+  });
+
   // Utils
   // ---------------------------------
 

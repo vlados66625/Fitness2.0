@@ -31,10 +31,6 @@ $color-torch-red-cobalt:            linear-gradient(#ED0233, #003EB7);
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 
-// у некоторых шрифтов в ios возникают проблемы с символом рубля
-// https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
-
 $ff-roboto-condensed:               "Roboto Condensed", "Arial", sans-serif;
 
 $ff-alumni-sans:                    "Alumni Sans", "Arial", sans-serif;
