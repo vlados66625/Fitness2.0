@@ -1,19 +1,20 @@
+// Global, variables and mixins
+// ---------------------------------
+@import "variables";
+@import "mixins";
+
 // Vendor
 // ---------------------------------
 
 @import "vendor/normalize";
 @import "vendor/data-tabs";
-// Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
+// Swiper 10.0.4
 
 // Global
 // ---------------------------------
-
-@import "variables";
-@import "mixins";
 @import "global/fonts";
 @import "global/reboot";
-@import "global/utils";
 @import "global/container";
 
 // Blocks
@@ -30,9 +31,15 @@
 @import "blocks/video-container";
 @import "blocks/abonnements";
 @import "blocks/abonnement";
+@import "blocks/super-games";
+@import "blocks/trainer";
+@import "blocks/advantages";
 @import "blocks/main-footer";
 @import "blocks/social-network";
 
+// Global
+// ---------------------------------
+@import "global/utils";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

@@ -1,0 +1,153 @@
+.trainer__wrapper {
+  padding: 27px 0 105px;
+
+  @include vp-1199 {
+    padding: 20px 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 24px 0 100px;
+  }
+}
+
+.trainer__container {
+  position: relative;
+}
+
+.trainer__header {
+  padding-left: 2px;
+  margin-bottom: 48px;
+
+  @include vp-1199 {
+    margin-bottom: 31px;
+    padding: 0;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+  }
+}
+
+.trainer__photo {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(16, 38, 84, 0.89);
+  }
+
+  @include vp-1199 {
+    width: 268px;
+    height: 294px;
+    margin: 0;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.trainer__photo img {
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 100%;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.trainer__photo-container {
+  position: relative;
+}
+
+.trainer__title {
+  margin: 0 0 5px;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  top: 246px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $color-default-white;
+  font-size: 18px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.trainer__description {
+  pointer-events: none;
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  color: #b6bdcc;
+}
+
+.trainer__description-list {
+  text-align: start;
+  pointer-events: none;
+  position: absolute;
+  top: 130px;
+  left: 71px;
+  z-index: 1;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.trainer__description-item {
+  position: relative;
+  margin-bottom: 9px;
+  color: $color-default-white;
+  font-size: 14px;
+
+  &::before {
+    position: absolute;
+    top: 9px;
+    left: -16px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $color-default-white;
+  }
+}
+
+.trainer__photo-container {
+  display: inline-block;
+  height: 294px;
+}
+
+.trainer__photo-container {
+  @include hover {
+    .trainer__title {
+      top: 52px;
+    }
+
+    .trainer__description,
+    .trainer__description-list,
+    .trainer__photo::before {
+      display: block;
+    }
+  }
+}
+
+.trainer__photo-container--is-active .trainer__title {
+  top: 52px;
+}
+
+.trainer__photo-container--is-active .trainer__description,
+.trainer__photo-container--is-active .trainer__description-list,
+.trainer__photo-container--is-active .trainer__photo::before {
+  display: block;
+}
