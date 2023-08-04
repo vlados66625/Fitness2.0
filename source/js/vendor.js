@@ -1,6 +1,7 @@
 // Swiper 10.0.4
 import './vendor/focus-visible-polyfill';
 import { initTabs, tabs } from './vendor/tabs/init-tabs';
+import {initAccordions, accordions} from './vendor/accordions/init-accordion';
 import Swiper from './vendor/swiper';
 
 const control = document.querySelector('[data-tabs="control"]');
@@ -11,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     tabs.openTab(control);
   }
+
+  initAccordions();
 
   const swiper = new Swiper('.swiper', {
     loop: true,

@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
   calculateVideoSize();
 
   activeInfoTrainer();
-  
+
   window.addEventListener('resize', function () {
     calculateVideoSize();
     activeInfoTrainer();

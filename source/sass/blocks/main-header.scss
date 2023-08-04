@@ -1,23 +1,23 @@
 .main-header {
   background: conic-gradient(
     from 151deg at 16.03% 39.06%,
-    #003d85 32.23633825778961deg,
-    #b80027 313.3060026168823deg
+    #003d85 32.24deg,
+    #b80027 313.31deg
   );
 
   @include vp-1199 {
     background: conic-gradient(
       from 155deg at 20.7% 35.74%,
-      #003d85 32.23633825778961deg,
-      #b80027 313.3060026168823deg
+      #003d85 32.24deg,
+      #b80027 313.31deg
     );
   }
 
   @include vp-767 {
     background: conic-gradient(
       from 167deg at 35.31% 34.22%,
-      #003d85 32.23633825778961deg,
-      #b80027 313.3060026168823deg
+      #003d85 32.24deg,
+      #b80027 313.31deg
     );
   }
 }

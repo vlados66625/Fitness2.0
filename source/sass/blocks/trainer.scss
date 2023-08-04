@@ -66,10 +66,6 @@
   }
 }
 
-.trainer__photo-container {
-  position: relative;
-}
-
 .trainer__title {
   margin: 0 0 5px;
   position: absolute;
@@ -126,9 +122,8 @@
 .trainer__photo-container {
   display: inline-block;
   height: 294px;
-}
+  position: relative;
 
-.trainer__photo-container {
   @include hover {
     .trainer__title {
       top: 52px;
