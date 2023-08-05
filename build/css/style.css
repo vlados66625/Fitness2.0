@@ -4174,6 +4174,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .is-active > .faq__accordion-wrapper {
@@ -4186,6 +4187,7 @@ h2 {
 }
 
 .faq__accordion-list li {
+  position: relative;
   padding: 26px 0 24px;
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
@@ -4321,6 +4323,16 @@ h2 {
   .faq__accordion-list button[disabled]:hover:not(.focus-visible)::after, .faq__accordion-list button[disabled]:hover:not(.focus-visible)::before {
     background-color: #1c3374;
   }
+}
+
+.faq__accordion-button-container {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.is-active > .faq__accordion-button-container {
+  display: none;
 }
 
 .main-footer {
