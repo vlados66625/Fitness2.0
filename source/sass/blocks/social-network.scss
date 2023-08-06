@@ -13,11 +13,9 @@
 }
 
 .social-network li {
-
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: $color-default-white;
 }
 
 .social-network a {
@@ -29,4 +27,29 @@
   border-radius: 50%;
   font-size: 0;
   line-height: 0;
+  background-color: $color-default-white;
+
+  @include hover-focus {
+    background-color: $color-egyptian-blue;
+
+    & use {
+      fill: $color-default-white;
+    }
+  }
+
+  @include active {
+    background-color: $color-sapphire;
+
+    & use {
+      fill: $color-default-white;
+    }
+  }
+}
+
+.social-network .disabled {
+  background-color: #030a1a;
+}
+
+.social-network a use {
+  fill: $color-black-russian;
 }

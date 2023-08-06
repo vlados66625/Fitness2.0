@@ -25,9 +25,15 @@
 
   &--trainer {
     padding: 0;
+    max-width: 1200px;
+
+    @media (max-width: 1366px) {
+      max-width: 89.5%;
+    }
 
     @include vp-1199 {
       padding: 0 86px;
+      max-width: 100%;
     }
 
     @include vp-767 {
@@ -40,6 +46,16 @@
 
     @include vp-1199 {
       padding: 0 45px;
+    }
+
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+
+  &--reviews {
+    @include vp-1199 {
+      padding: 0 25px;
     }
 
     @include vp-767 {

@@ -46,3 +46,37 @@
     height: 73px;
   }
 }
+
+.video-container__button-icon {
+  @include hover-focus {
+    & .video-container__button-icon-stroke {
+      stroke: $color-sapphire;
+    }
+
+    & .video-container__button-icon-circle {
+      fill: $color-default-white;
+    }
+
+    & .video-container__button-icon-triangle {
+      fill: $color-sapphire;
+    }
+  }
+}
+
+.video-container__button[disabled] {
+  & .video-container__button-icon {
+    opacity: 0.4;
+  }
+
+  & .video-container__button-icon-stroke {
+    stroke: $color-sapphire;
+  }
+
+  & .video-container__button-icon-circle {
+    fill: $color-default-white;
+  }
+
+  & .video-container__button-icon-triangle {
+    fill: $color-sapphire;
+  }
+}

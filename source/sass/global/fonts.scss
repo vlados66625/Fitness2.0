@@ -18,7 +18,8 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: local("Roboto Condensed Light"), local("RobotoCondensed-Light"),
+  src: local("Roboto Condensed Light"),
+    local("RobotoCondensed-Light"),
     url("/fonts/roboto-condensed/robotocondensedlight.woff2") format("woff2"),
     url("/fonts/roboto-condensed/robotocondensedlight.woff") format("woff");
   font-weight: 300;
@@ -28,7 +29,8 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"),
+  src: local("Roboto Condensed"),
+    local("RobotoCondensed-Regular"),
     url("/fonts/roboto-condensed/robotocondensed.woff2") format("woff2"),
     url("/fonts/roboto-condensed/robotocondensed.woff") format("woff");
   font-weight: 400;
@@ -38,7 +40,8 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"),
+  src: local("Roboto Condensed Bold"),
+    local("RobotoCondensed-Bold"),
     url("/fonts/roboto-condensed/robotocondensedbold.woff2") format("woff2"),
     url("/fonts/roboto-condensed/robotocondensedbold.woff") format("woff");
   font-weight: 700;

@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="SUPERGYM, фитнес центр c nренажёрным залом, групповыми занятиями и с кардио-зоной.">
   <title>Fitness2.0</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -35,7 +35,7 @@
             </a>
             <div class="header-top__link-tel-wrapper">
               <div class="header-top__link-tel-container">
-                <a class="header-top__link-tel focus-visible" href="tel:+78005555555">8-800-555-55-55</a>
+                <a class="header-top__link-tel" href="tel:+78005555555">8-800-555-55-55</a>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="gym">
         <div class="gym__wrapper">
           <div class="gym__container-text">
@@ -102,25 +102,28 @@
             <div class="gym__video-contaner video-container">
               <video data-action="gym-video" src="/video/gym.mp4"
                 poster="/img/video-preview/gym-video-preview@1x-desktop.png" controls width="364" height="228"></video>
-              <button class="video-container__button" data-action="play-button">
-                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle opacity="0.2" cx="50" cy="50" r="49" stroke="url(#paint0_linear_82_466)" stroke-width="2" />
-                  <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_82_466)" />
-                  <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
+              <button class="video-container__button" data-action="play-button" aria-label="Включить видео">
+                <svg class="video-container__button-icon" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                  <circle class="video-container__button-icon-stroke" opacity="0.2" cx="50" cy="50" r="49"
+                    stroke="url(#paint0_linear_82_466)" stroke-width="2" />
+                  <circle class="video-container__button-icon-circle" cx="50" cy="50" r="36"
+                    fill="url(#paint1_linear_82_466)" />
+                  <path class="video-container__button-icon-triangle" d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"
+                    fill="white" />
                   <defs>
                     <linearGradient id="paint0_linear_82_466" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
                       gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#ED0233" />
+                      <stop offset="0" stop-color="#ED0233" />
                       <stop offset="1" stop-color="#003EB7" />
                     </linearGradient>
                     <linearGradient id="paint1_linear_82_466" x1="28.2373" y1="14" x2="90.1653" y2="21.664"
                       gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#ED0233" />
+                      <stop offset="0" stop-color="#ED0233" />
                       <stop offset="1" stop-color="#003EB7" />
                     </linearGradient>
                   </defs>
                 </svg>
-                <!-- <img width="100" height="100" src="/img/svg/play-button.svg" alt="кнопка воспроизведения видео."> -->
               </button>
             </div>
           </div>
@@ -318,7 +321,7 @@
               <div class="super-games__description">
                 <p>Ежегодные соревнования по&nbsp;CrossFit</p>
               </div>
-              <a href="#" class="btn">заполнить заявку</a>
+              <a href="#" class="btn btn--dark-background">заполнить заявку</a>
             </div>
             <div class="super-games__image">
               <picture>
@@ -345,11 +348,11 @@
           </div>
           <div class="container container--trainer">
             <div class="trainer__container">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+              <div class="trainer__swiper-button-prev swiper-button-prev button-prev"></div>
+              <div class="trainer__swiper-button-next swiper-button-next button-next"></div>
+              <div class="trainer__swiper swiper">
+                <div class="trainer__swiper-wrapper swiper-wrapper">
+                  <div class="trainer__swiper-slide swiper-slide">
                     <div class="trainer__photo-container">
                       <h3 class="trainer__title">Анна Павлова<span class="trainer__description">CrossFit</span></h3>
                       <ul class="trainer__description-list">
@@ -373,7 +376,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainer__swiper-slide swiper-slide">
                     <div class="trainer__photo-container">
                       <h3 class="trainer__title">Алексей Лавров<span class="trainer__description">CrossFit</span></h3>
                       <ul class="trainer__description-list">
@@ -397,7 +400,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainer__swiper-slide swiper-slide">
                     <div class="trainer__photo-container">
                       <h3 class="trainer__title">Александр Пашков<span class="trainer__description">CrossFit</span></h3>
                       <ul class="trainer__description-list">
@@ -421,7 +424,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainer__swiper-slide swiper-slide">
                     <div class="trainer__photo-container">
                       <h3 class="trainer__title">Мария Кетова<span class="trainer__description">CrossFit</span></h3>
                       <ul class="trainer__description-list">
@@ -445,7 +448,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainer__swiper-slide swiper-slide">
                     <div class="trainer__photo-container">
                       <h3 class="trainer__title">Анна Павлова<span class="trainer__description">CrossFit</span></h3>
                       <ul class="trainer__description-list">
@@ -469,7 +472,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainer__swiper-slide swiper-slide">
                     <div class="trainer__photo-container">
                       <h3 class="trainer__title">Анна Павлова<span class="trainer__description">CrossFit</span></h3>
                       <ul class="trainer__description-list">
@@ -493,7 +496,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainer__swiper-slide swiper-slide">
                     <div class="trainer__photo-container">
                       <h3 class="trainer__title">Анна Павлова<span class="trainer__description">CrossFit</span></h3>
                       <ul class="trainer__description-list">
@@ -517,7 +520,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="trainer__swiper-slide swiper-slide">
                     <div class="trainer__photo-container">
                       <h3 class="trainer__title">Анна Павлова<span class="trainer__description">CrossFit</span></h3>
                       <ul class="trainer__description-list">
@@ -594,7 +597,6 @@
         </div>
       </section>
       <section class="stocks">
-
         <div class="container">
           <div class="stocks__container-main">
             <h2>Акции</h2>
@@ -639,6 +641,7 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
       <section class="faq">
         <div class="container">
@@ -823,32 +826,20 @@
                       <li class="is-active" data-accordion="element">
                         <div class="faq__accordion-button-container" data-accordion="button"></div>
                         <div class="faq__accordion-wrapper" data-accordion="button">
-                          <h3>Какие правила необходимо соблюдать в&nbsp;тренажерном зале?</h3>
+                          <h3>Есть в&nbsp;фитнес-центре дресс-код?</h3>
                           <button data-accordion="button" aria-label="кнопка открытия и закрытия ответа"></button>
                         </div>
-                        <p data-accordion="content">Важно помнить о&nbsp;личной чистоте, правильной технике выполнения
-                          упражнений, уважении к&nbsp;очередности использования оборудования и&nbsp;выборе подходящей
-                          спортивной одежды и&nbsp;обуви. Эти правила помогают обеспечить безопасность и&nbsp;комфорт
-                          для всех. Если у&nbsp;вас возникнут вопросы, не&nbsp;стесняйтесь обратиться к&nbsp;нашему
-                          персоналу.
+                        <p data-accordion="content">Для тренировок необходимо иметь предназначенную для этого закрытую
+                          спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты
+                          (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности,
+                          запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п.,
+                          исключения составляют специальные классы (например, йога, пилатес).
                         </p>
                       </li>
                       <li data-accordion="element">
                         <div class="faq__accordion-button-container" data-accordion="button"></div>
                         <div class="faq__accordion-wrapper" data-accordion="button">
-                          <h3>Можно&nbsp;ли заморозить абонемент?</h3>
-                          <button data-accordion="button" aria-label="кнопка открытия и закрытия ответа"></button>
-                        </div>
-                        <p data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия
-                          с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно
-                          задать
-                          вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.
-                        </p>
-                      </li>
-                      <li data-accordion="element">
-                        <div class="faq__accordion-button-container" data-accordion="button"></div>
-                        <div class="faq__accordion-wrapper" data-accordion="button">
-                          <h3>Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?</h3>
+                          <h3>Можно&nbsp;ли приводить с&nbsp;собой детей на&nbsp;тренировки?</h3>
                           <button data-accordion="button" aria-label="кнопка открытия и закрытия ответа"></button>
                         </div>
                         <p data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия
@@ -860,7 +851,19 @@
                       <li data-accordion="element">
                         <div class="faq__accordion-button-container" data-accordion="button"></div>
                         <div class="faq__accordion-wrapper" data-accordion="button">
-                          <h3>Что такое семейный доступ и&nbsp;доступ для друзей?</h3>
+                          <h3>Какие дополнительные правила посещения центра?</h3>
+                          <button data-accordion="button" aria-label="кнопка открытия и закрытия ответа"></button>
+                        </div>
+                        <p data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия
+                          с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно
+                          задать
+                          вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.
+                        </p>
+                      </li>
+                      <li data-accordion="element">
+                        <div class="faq__accordion-button-container" data-accordion="button"></div>
+                        <div class="faq__accordion-wrapper" data-accordion="button">
+                          <h3>Нужна&nbsp;ли медицинская справка для посещения залов и&nbsp;бассейна??</h3>
                           <button data-accordion="button" aria-label="кнопка открытия и закрытия ответа"></button>
                         </div>
                         <p data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия
@@ -878,13 +881,138 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="container">
+        <div class="container container--reviews">
           <div class="reviews__container">
             <h2 class="reviews__header">Отзывы</h2>
-            div.reviews__
+            <div class="reviews__wrapper">
+              <div class="reviews__swiper swiper">
+                <div class="reviews__swiper-button-prev swiper-button-prev"></div>
+                <div class="reviews__swiper-button-next swiper-button-next"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="reviews__review-container">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="/img/reviews/reviews-avtor-1@1x.webp 1x, /img/reviews/reviews-avtor-1@2x.webp 2x">
+                        <img src="/img/reviews/reviews-avtor-1@1x.png" srcset="/img/reviews/reviews-avtor-1@2x.png 2x"
+                          alt="фото автора." width="80" height="80">
+                      </picture>
+                      <h3 class="reviews__name-avtor">Анна Орлова</h3>
+                      <p class="reviews__description">
+                        &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="reviews__review-container">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="/img/reviews/reviews-avtor-1@1x.webp 1x, /img/reviews/reviews-avtor-1@2x.webp 2x">
+                        <img src="/img/reviews/reviews-avtor-1@1x.png" srcset="/img/reviews/reviews-avtor-1@2x.png 2x"
+                          alt="фото автора." width="80" height="80">
+                      </picture>
+                      <h3 class="reviews__name-avtor">Мария Манро</h3>
+                      <p class="reviews__description">
+                        &laquo;Отличный тренажерный зал! Я&nbsp;впечатлен разнообразием оборудования и&nbsp;дружелюбной
+                        атмосферой. Профессиональные тренеры всегда готовы помочь и&nbsp;подсказать.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="reviews__review-container">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="/img/reviews/reviews-avtor-1@1x.webp 1x, /img/reviews/reviews-avtor-1@2x.webp 2x">
+                        <img src="/img/reviews/reviews-avtor-1@1x.png" srcset="/img/reviews/reviews-avtor-1@2x.png 2x"
+                          alt="фото автора." width="80" height="80">
+                      </picture>
+                      <h3 class="reviews__name-avtor">Анна Орлова</h3>
+                      <p class="reviews__description">
+                        &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="reviews__review-container">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="/img/reviews/reviews-avtor-1@1x.webp 1x, /img/reviews/reviews-avtor-1@2x.webp 2x">
+                        <img src="/img/reviews/reviews-avtor-1@1x.png" srcset="/img/reviews/reviews-avtor-1@2x.png 2x"
+                          alt="фото автора." width="80" height="80">
+                      </picture>
+                      <h3 class="reviews__name-avtor">Анна Орлова</h3>
+                      <p class="reviews__description">
+                        &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="reviews__review-container">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="/img/reviews/reviews-avtor-1@1x.webp 1x, /img/reviews/reviews-avtor-1@2x.webp 2x">
+                        <img src="/img/reviews/reviews-avtor-1@1x.png" srcset="/img/reviews/reviews-avtor-1@2x.png 2x"
+                          alt="фото автора." width="80" height="80">
+                      </picture>
+                      <h3 class="reviews__name-avtor">Анна Орлова</h3>
+                      <p class="reviews__description">
+                        &laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <div class="main__free-lesson-contacts-container">
+        <section class="free-lesson">
+          <div class="free-lesson__container">
+            <h2>Бесплатное занятие</h2>
+            <div class="free-lesson__form-container">
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <input type="text" placeholder="Имя" name="name" aria-label="Введите ваше имя." required>
+                <input type="text" placeholder="Телефон" name="tel" aria-label="Введите ваш телефон." required>
+                <input type="submit" value="отправить">
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <h2>Контакты</h2>
+            <div class="contacts__container">
+              <div class="contacts__address">
+                <h3>Адрес:</h3>
+                <address>
+                  г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7
+                </address>
+              </div>
+              <div class="contacts__tel">
+                <h3>Телефон:</h3>
+                <address>
+                  <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+                </address>
+              </div>
+              <div class="contacts__schedule">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+              <div class="contacts__email">
+                <h3>Email:</h3>
+                <address>
+                  <a href="mailto:example@example.com">omsk@supergym.ru</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="container">
@@ -902,7 +1030,7 @@
               <li><a href="#">Услуги</a></li>
               <li><a href="#">Абонементы</a></li>
               <li><a href="#">Акции</a></li>
-              <li><a href="#">Тренеры</a></li>
+              <li><a href="#">Tренеры</a></li>
               <li><a href="#">Расписание</a></li>
             </ul>
           </div>
@@ -911,7 +1039,7 @@
               <li>
                 <a href="#" aria-label="вконтакте">
                   <svg width="15" height="15" focusable="false" aria-hidden="true">
-                    <use href="/img/sprite.svg#vk"></use>
+                    <use fill="none" href="/img/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
@@ -935,8 +1063,8 @@
       </div>
     </footer>
   </div>
-  <script src="/js/vendor.min.js" type="module" defer></script>
-  <script src="/js/main.min.js" type="module" defer></script>
+  <script src="/js/vendor.min.js" defer></script>
+  <script src="/js/main.min.js" defer></script>
 </body>
 
 </html>

@@ -7,14 +7,16 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 37px;
-  padding-bottom: 38px;
+  padding-top: 27px;
+  padding-bottom: 28px;
 
   @include vp-1199 {
-    padding-top: 45px;
+    padding-top: 39px;
+    padding-bottom: 38px;
   }
 
   @include vp-767 {
+    padding-top: 45px;
     padding-bottom: 52px;
     position: relative;
     flex-direction: column;
@@ -39,6 +41,21 @@
     height: 15px;
     display: block;
     line-height: 0;
+  }
+}
+
+.main-footer__wrapper-logo a {
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    outline: 1px $color-default-white solid;
+    outline-offset: 6px;
+  }
+
+  @include active {
+    opacity: 1;
   }
 }
 
@@ -116,11 +133,34 @@
 }
 
 .main-footer__links a {
+  position: relative;
   color: $color-default-white;
   font-size: 14px;
   line-height: normal;
 
   @include vp-767 {
     font-size: 16px;
+  }
+
+  @include hover {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      width: 100%;
+      height: 1px;
+      background-color: $color-default-white;
+    }
+  }
+
+  @include focus {
+    outline: 1px $color-default-white solid;
+    outline-offset: 6px;
+  }
+
+  @include active {
+    &::before {
+      display: none;
+    }
   }
 }

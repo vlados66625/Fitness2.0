@@ -1,7 +1,7 @@
 // Swiper 10.0.4
 import './vendor/focus-visible-polyfill';
-import { initTabs, tabs } from './vendor/tabs/init-tabs';
-import {initAccordions, accordions} from './vendor/accordions/init-accordion';
+import {initTabs, tabs} from './vendor/tabs/init-tabs';
+import {initAccordions} from './vendor/accordions/init-accordion';
 import Swiper from './vendor/swiper';
 
 const control = document.querySelector('[data-tabs="control"]');
@@ -15,31 +15,42 @@ window.addEventListener('DOMContentLoaded', () => {
 
   initAccordions();
 
-  const swiper = new Swiper('.swiper', {
+  const trainerSwiper = new Swiper('.trainer__swiper', {
     loop: true,
     slidesPerView: 4,
 
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.trainer__swiper-button-next',
+      prevEl: '.trainer__swiper-button-prev',
     },
   });
 
   const updateSwiperOptions = () => {
-    if (window.innerWidth >= 1000 && window.innerWidth < 1200) {
-      swiper.params.slidesPerView = 3;
-    } else if (window.innerWidth >= 565 && window.innerWidth < 1000) {
-      swiper.params.slidesPerView = 2;
+    if (window.innerWidth >= 1050 && window.innerWidth < 1200) {
+      trainerSwiper.params.slidesPerView = 3;
+    } else if (window.innerWidth >= 565 && window.innerWidth < 1050) {
+      trainerSwiper.params.slidesPerView = 2;
     } else if (window.innerWidth >= 320 && window.innerWidth < 565) {
-      swiper.params.slidesPerView = 1;
+      trainerSwiper.params.slidesPerView = 1;
     } else {
-      swiper.params.slidesPerView = 4;
+      trainerSwiper.params.slidesPerView = 4;
     }
-    swiper.update();
-    swiper.updateSlides();
+    trainerSwiper.update();
+    trainerSwiper.updateSlides();
   };
   updateSwiperOptions();
 
   window.addEventListener('resize', updateSwiperOptions);
+
+  const reviewsSwiper = new Swiper('.reviews__swiper', {
+    loop: false,
+    slidesPerView: 1,
+
+
+    navigation: {
+      nextEl: '.reviews__swiper-button-next',
+      prevEl: '.reviews__swiper-button-prev',
+    },
+  });
 });

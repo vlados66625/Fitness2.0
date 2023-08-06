@@ -51,10 +51,11 @@
       background: linear-gradient(151deg, $color-torch-red 0%, #003eb7 100%);
       border: none;
       color: $color-default-white;
+      outline: none;
     }
 
     @include active {
-      color: rgba($color-default-white, 0.6);
+      color: rgba($color-default-white, 0.7);
     }
   }
 
@@ -62,7 +63,7 @@
     @include hover-focus {
       background: $color-default-white;
       color: $color-egyptian-blue;
-      border: none;
+      outline: none;
     }
 
     @include active {
@@ -71,10 +72,20 @@
   }
 
   &--blue-background-disabled {
-    opacity: 0.3;
+    @include disabled {
+      background: $color-default-white;
+      color: $color-default-white;
+      opacity: 0.3;
+      cursor: default;
+    }
   }
 
   &--dark-background-disabled {
-    opacity: 0.5;
+    @include disabled {
+      background: transparent;
+      color: $color-sapphire;
+      opacity: 0.5;
+      cursor: default;
+    }
   }
 }

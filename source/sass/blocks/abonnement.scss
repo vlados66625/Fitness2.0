@@ -14,6 +14,7 @@
 
   @include hover-focus {
     background: linear-gradient(151deg, $color-torch-red 0%, #003eb7 100%);
+    outline: none;
   }
 
   &:focus-within {

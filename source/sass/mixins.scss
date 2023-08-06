@@ -18,8 +18,14 @@
   }
 }
 
+@mixin disabled {
+  &:not(.class):not(.claas1):not(.class2) {
+    @content;
+  }
+}
+
 @mixin active {
-  &.focus-visible:active {
+  &:active:not(.class):not(.class2):not(.class3) {
     @content;
   }
 }
