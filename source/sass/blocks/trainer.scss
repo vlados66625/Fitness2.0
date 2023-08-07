@@ -173,8 +173,11 @@
   }
 
   @include hover-focus {
+    outline: none;
+
     &::before {
       left: 56%;
+      outline: none;
     }
   }
 }
@@ -226,12 +229,13 @@
 
 .trainer__swiper-button-prev,
 .trainer__swiper-button-next {
+  outline: none;
+
   @include hover-focus {
     &::before {
       content: "";
       position: absolute;
       top: 50%;
-      left: 56%;
       transform: translate(-50%, -50%);
       width: 56px;
       height: 56px;

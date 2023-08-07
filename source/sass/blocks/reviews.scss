@@ -154,11 +154,12 @@
 .reviews__swiper-button-prev,
 .reviews__swiper-button-next {
   @include hover-focus {
+    outline: none;
+
     &::before {
       content: "";
       position: absolute;
       top: 50%;
-      left: 56%;
       transform: translate(-50%, -50%);
       width: 56px;
       height: 56px;
