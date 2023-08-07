@@ -39,7 +39,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 28px;
-  row-gap: 17px;
+  row-gap: 28px;
 
   @include vp-1199 {
     column-gap: 57px;
