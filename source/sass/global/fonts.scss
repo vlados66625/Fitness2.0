@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Alumni Sans";
-  src: url("/fonts/alumni-sans/alumnisans-semibold.woff2") format("woff2"),
-    url("/fonts/alumni-sans/alumnisans-semibold.woff") format("woff");
+  src: url( "../fonts/alumni-sans/alumnisans-semibold.woff2") format("woff2"),
+    url( "../fonts/alumni-sans/alumnisans-semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
   font-family: "Roboto Condensed";
   src: local("Roboto Condensed Light"),
     local("RobotoCondensed-Light"),
-    url("/fonts/roboto-condensed/robotocondensedlight.woff2") format("woff2"),
-    url("/fonts/roboto-condensed/robotocondensedlight.woff") format("woff");
+    url( "../fonts/roboto-condensed/robotocondensedlight.woff2") format("woff2"),
+    url( "../fonts/roboto-condensed/robotocondensedlight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -22,8 +22,8 @@
   font-family: "Roboto Condensed";
   src: local("Roboto Condensed"),
     local("RobotoCondensed-Regular"),
-    url("/fonts/roboto-condensed/robotocondensed.woff2") format("woff2"),
-    url("/fonts/roboto-condensed/robotocondensed.woff") format("woff");
+    url( "../fonts/roboto-condensed/robotocondensed.woff2") format("woff2"),
+    url( "../fonts/roboto-condensed/robotocondensed.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -33,8 +33,8 @@
   font-family: "Roboto Condensed";
   src: local("Roboto Condensed Bold"),
     local("RobotoCondensed-Bold"),
-    url("/fonts/roboto-condensed/robotocondensedbold.woff2") format("woff2"),
-    url("/fonts/roboto-condensed/robotocondensedbold.woff") format("woff");
+    url( "../fonts/roboto-condensed/robotocondensedbold.woff2") format("woff2"),
+    url( "../fonts/roboto-condensed/robotocondensedbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
