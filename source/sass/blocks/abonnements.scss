@@ -100,6 +100,7 @@
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
   cursor: pointer;
+  user-select: none;
 
   @include vp-1199 {
     font-size: 18px;
@@ -145,13 +146,19 @@
 }
 
 .abonnements__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
 
   @include vp-767 {
     gap: 35px;
   }
+}
+
+.abonnements__content-item {
+  width: 100%;
 }

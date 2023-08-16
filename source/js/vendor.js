@@ -27,11 +27,9 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   const updateSwiperOptions = () => {
-    if (window.innerWidth >= 1050 && window.innerWidth < 1200) {
-      trainerSwiper.params.slidesPerView = 3;
-    } else if (window.innerWidth >= 565 && window.innerWidth < 1050) {
+    if (window.innerWidth >= 768 && window.innerWidth < 1200) {
       trainerSwiper.params.slidesPerView = 2;
-    } else if (window.innerWidth >= 320 && window.innerWidth < 565) {
+    } else if (window.innerWidth < 768) {
       trainerSwiper.params.slidesPerView = 1;
     } else {
       trainerSwiper.params.slidesPerView = 4;
